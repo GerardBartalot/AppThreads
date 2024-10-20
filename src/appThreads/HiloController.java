@@ -14,7 +14,6 @@ public class HiloController {
     	
     }
 
-    // Iniciar un hilo específico
     public void comienzaHilo(int idHilo) {
         
     	Pelota pelota = new Pelota();
@@ -26,7 +25,6 @@ public class HiloController {
         
     }
 
-    // Detener un hilo específico
     public void detenerHilo(int idHilo) {
         
     	Thread hilo = hilos.get(idHilo);
@@ -36,7 +34,6 @@ public class HiloController {
         
     }
 
-    // Detener todos los hilos
     public void detenerTodosLosHilos() {
         
     	for (Thread hilo : hilos.values()) {
